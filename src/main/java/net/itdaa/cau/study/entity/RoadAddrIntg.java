@@ -10,15 +10,21 @@ import javax.persistence.Table;
 /**
  * JPA 에서 Entity 객체는 사용하는 DB 의 Table 과 구조가 같아야 합니다.
  */
+
+//테이블과 링크될 클래스임을 나타냄 도메인 느낌 테이블을 객체화 한거
 @Entity
 @Data
 @Table(name="ROAD_ADDR_INTG")
 public class RoadAddrIntg {
 
+    //특이점! setter 메소드가 없다
+
+    //PK필드를 나타냄
     @Id
     @Column(name = "MGR_NO")
     private String mgrNO;                 // 관리번호 (PK)
 
+    //테이블의 컬럼!
     @Column(name = "SIDO_NAME")
     private String sidoName;              // 시도명
 
