@@ -28,5 +28,4 @@ public interface RoadAddrRepository extends JpaRepository<RoadAddrIntg, String> 
 
     // 도로명주소를 도로명,빌딩본번,빌딩부번 모두 = 로 조회
     List<RoadAddress> findByRoadNameAndBldgMainNoAndBldgSubNo(String roadName, Integer bldgMainNo, Integer bldgSubNo);
-
 }

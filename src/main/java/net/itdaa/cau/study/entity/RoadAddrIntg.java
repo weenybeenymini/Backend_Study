@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * JPA 에서 Entity 객체는 사용하는 DB 의 Table 과 구조가 같아야 합니다.
@@ -22,7 +23,7 @@ public class RoadAddrIntg {
     //PK필드를 나타냄
     @Id
     @Column(name = "MGR_NO")
-    private String mgrNO;                 // 관리번호 (PK)
+    private String mgrNo;                 // 관리번호 (PK)
 
     //테이블의 컬럼!
     @Column(name = "SIDO_NAME")
